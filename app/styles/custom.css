@@ -1,0 +1,252 @@
+body {
+  @apply bg-primary text-primaryContent py-24 max_lg:py-20 max_md:py-16 max_sm:py-14 max_s:py-12 max_xs:py-10;
+}
+.content-container {
+  @apply max-w-base mx-auto w-[90%];
+}
+.content-wrap {
+  @apply grid grid-cols-3 max_lg:grid-cols-1 gap-4;
+}
+
+/* Heading styles */
+.page-heading {
+  @apply text-accentA;
+}
+.page-section-heading {
+  @apply pb-8 max_md:pb-7 max_s:pb-6 text-7xl max_md:text-6xl max_sm:text-5xl font-bold text-accentB;
+}
+.page-sub-heading {
+  @apply pb-4 max_md:pb-3 text-2xl max_md:text-xl font-bold text-accentA;
+}
+.page-sub-heading.small {
+  @apply pb-2 max_md:pb-3 text-lg font-semibold text-accentA;
+}
+.page-sub-heading.small.remove-padding {
+  @apply p-0;
+}
+
+/* Navigation styles */
+.nav-wrap {
+  @apply pb-16 max_md:pb-14 max_sm:pb-12 max_s:pb-10 max_xs:pb-6 grid grid-cols-2 gap-4;
+}
+.profile .name {
+  @apply pb-3 text-accentA;
+}
+.profile .designation {
+  @apply pb-3 text-accentA text-xl max_md:text-lg font-semibold;
+}
+.profile .description {
+  @apply max-w-[380px] text-accentA;
+}
+.nav-list {
+  @apply list-none p-0 m-0;
+}
+.nav-list li {
+  @apply text-right pb-3;
+}
+.nav-list a {
+  @apply relative text-primaryContent hover:text-accentA focus:text-accentA font-light no-underline transition-colors ease-linear;
+}
+.nav-list a.active {
+  @apply text-secondary font-bold;
+}
+/* nav link hover animation */
+.nav-list a span {
+  @apply absolute -bottom-1 left-0 right-0 w-[2px] h-[2px] bg-secondary/0 transition-all ease-out duration-500;
+}
+.nav-list a:hover span,
+.nav-list a:focus span {
+  @apply w-full bg-secondary/100;
+}
+
+/* Connect styles */
+.connect-wrap {
+  @apply ml-auto max-w-[250px] max_lg:w-full max_lg:ml-0;
+}
+.connect-wrap ul {
+  @apply list-none p-0 m-0 max_lg:pb-7 max_md:pb-6 max_lg:flex max_lg:gap-6 self-center items-center;
+}
+.connect-wrap li {
+  @apply mb-8 max_lg:mb-0;
+}
+.connect-wrap a {
+  @apply relative inline-block max_lg:inline-block max_lg:p-2 text-primaryContent hover:text-accentA focus:text-accentA font-light no-underline transition-colors ease-linear;
+}
+.connect-wrap svg {
+  @apply fill-accentA;
+}
+.connect-wrap a:hover svg,
+.connect-wrap a:focus svg {
+  @apply fill-secondary;
+}
+/* connect link hover animation */
+.connect-wrap a span {
+  @apply absolute -bottom-1 left-0 right-0 w-[2px] h-[2px] bg-secondary/0 transition-all ease-out duration-500;
+}
+.connect-wrap a:hover span,
+.connect-wrap a:focus span {
+  @apply w-full bg-secondary/100;
+}
+
+/* Go back styles */
+.go-back-button {
+  @apply relative p-0 mb-8 max_md:mb-7 max_s:mb-6 bg-transparent border-none text-secondary font-bold;
+}
+.link-page {
+  @apply relative mb-5 text-base text-secondary font-bold no-underline;
+}
+/* Go back hover animation */
+.go-back-button span {
+  @apply absolute -bottom-1 left-0 right-0 w-[2px] h-[2px] bg-secondary/0 transition-all ease-out duration-500;
+}
+.go-back-button:hover span,
+.go-back-button:focus span {
+  @apply w-full bg-secondary/100;
+}
+/* link page hover animation */
+.link-page span {
+  @apply absolute -bottom-1 left-0 right-0 w-[2px] h-[2px] bg-secondary/0 transition-all ease-out duration-500;
+}
+.link-page:hover span,
+.link-page:focus span {
+  @apply w-full bg-secondary/100;
+}
+
+/* Content paragraph styles */
+/* .content p {
+  @apply text-base leading-7;
+} */
+
+/* Skills styles */
+.skills-rows {
+  @apply w-[960px] max_xl:w-[150%] max_lg:w-full grid grid-cols-4 max_lg:grid-cols-2 max_xs:grid-cols-1 gap-6;
+}
+.skills-list {
+  @apply list-none p-0 m-0;
+}
+.skills-list li {
+  @apply mb-3;
+}
+
+/* Footer styles */
+.footer-blk {
+  @apply mt-24 pt-5 border-0 border-t border-solid border-primaryContent grid grid-cols-2 max_sm:grid-cols-1 gap-4;
+}
+.footer-link {
+  @apply relative no-underline text-primaryContent hover:text-accentA focus:text-accentA transition-colors ease-linear;
+}
+.get-in-touch {
+  @apply no-underline text-secondary font-bold !important;
+}
+/* footer link hover animation */
+.footer-link span {
+  @apply absolute -bottom-1 left-0 right-0 w-[2px] h-[2px] bg-secondary/0 transition-all ease-out duration-500;
+}
+.footer-link:hover span,
+.footer-link:focus span {
+  @apply w-full bg-secondary/100;
+}
+
+/* Experience card styles */
+.exp-card {
+  @apply mb-6 p-6 flex max_sm:block gap-4 rounded-sm hover:bg-accentB/20 focus:bg-accentB/20 transition-all ease-linear;
+}
+.exp-card.edu {
+  @apply mb-0;
+}
+.exp-card h2 {
+  @apply flex self-center items-center gap-2;
+}
+.exp-card .year {
+  @apply max_sm:pb-1 text-sm font-medium;
+}
+/* .exp-blk-content p {
+  @apply pb-3;
+}
+.edu-blk-content p {
+  @apply pb-3;
+} */
+.exp-blk-content .reset-link {
+  @apply no-underline text-primaryContent;
+}
+
+/* Skill tag styles */
+.skill-wrap {
+  @apply flex gap-3 flex-wrap;
+}
+.skill-tags {
+  @apply max-h-[33px] px-4 py-2 flex align-middle items-center border border-solid border-secondary bg-secondary/30 font-medium text-white rounded-full;
+}
+.skill-tags p {
+  @apply text-sm;
+}
+
+/* Projects card styles */
+.project-card {
+  @apply mb-6 p-6 rounded-sm hover:bg-accentB/20 transition-all ease-linear;
+}
+.project-card-head-wrap {
+  @apply pb-4 flex items-center align-middle;
+}
+.project-link {
+  @apply p-2 flex gap-2 no-underline items-center align-middle self-center;
+}
+.project-link svg {
+  @apply fill-accentA;
+}
+.project-link:hover svg,
+.project-link:focus svg {
+  @apply fill-secondary;
+}
+
+/* Case study thumbnail image style */
+.casestudy-thumb-img-wrap {
+  @apply w-[142px] h-[142px] bg-accentB/20 rounded-sm overflow-hidden;
+}
+.casestudy-thumb-img-wrap img {
+  @apply w-full h-full;
+}
+.casestudy-section {
+  @apply pb-16 max_lg:pb-14 max_md:pb-12 max_xs:pb-10;
+}
+.casestudy-section .description {
+  @apply pb-4;
+}
+.casestudy-section .description:last-child {
+  @apply pb-0;
+}
+/* Clear list element styles */
+.clear-list {
+  @apply list-none p-0 m-0 pb-4;
+}
+.clear-list li {
+  @apply text-base font-light pb-1;
+}
+.clear-list li:last-child {
+  @apply pb-0;
+}
+/* Settings list element styles*/
+.dotted-list {
+  @apply list-disc pl-6;
+}
+.numbered-list {
+  @apply list-decimal pl-6;
+}
+/* Grids for user stories and acceptence criteria */
+.casestudy-grid-cards-wrap {
+  @apply grid grid-cols-2 max_md:grid-cols-1 gap-6;
+}
+.casestudy-grid-cards-wrap .card {
+  @apply p-7 border border-solid border-accentB rounded-sm;
+}
+
+/* Userflow images with overflow scroll */
+.userflow-wrap {
+  @apply mb-4 overflow-auto w-full;
+}
+.image-support-text {
+  @apply pb-6 -mt-2 text-sm italic;
+}
+.content-image {
+  @apply mb-4 w-full h-auto;
+}

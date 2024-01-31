@@ -1,0 +1,21 @@
+/* Default */
+.theme-a {
+  --primary: 15 23 42; /* Background dark blue */
+  --primary-content: 148 163 184; /* Used this - text color*/
+  --secondary: 0 186 247; /* Bright cyan blue */
+  --accentA: 226 232 240; /* Light white */
+  --accentB: 125 129 140; /* Faded white */
+  --card-colour: 25, 32, 51;
+  --transparent: transparent;
+}
+
+/* Light */
+.theme-b {
+  --primary: 15 23 42; /* Background dark blue */
+  --primary-content: 148 163 184; /* Used this - text color*/
+  --secondary: 0 186 247; /* Bright cyan blue */
+  --accentA: 226 232 240; /* Light white */
+  --accentB: 125 129 140; /* Faded white */
+  --card-colour: 25, 32, 51;
+  --transparent: transparent;
+}

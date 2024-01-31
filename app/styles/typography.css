@@ -1,0 +1,36 @@
+/* BASE CSS */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap");
+
+body {
+  @apply font-primary;
+}
+h1 {
+  @apply text-8xl max_xl:text-7xl max_lg:text-6xl max_md:text-5xl max_sm:text-4xl font-bold;
+}
+h2 {
+  @apply text-6xl max_xl:text-5xl max_lg:text-4xl max_md:text-3xl max_sm:text-2xl font-bold;
+}
+h3 {
+  @apply text-xl max_md:text-3xl font-bold;
+}
+h4 {
+  @apply text-lg max_md:text-xl;
+}
+h5 {
+  @apply text-sm max_md:text-base;
+}
+h6 {
+  @apply text-sm max_md:text-base;
+}
+p {
+  @apply text-base font-light;
+}
+label {
+  @apply text-base font-bold;
+}
+legend {
+  @apply text-base font-bold;
+}
+
+/* END */
